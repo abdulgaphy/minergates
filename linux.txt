@@ -1,0 +1,18 @@
+How to mine Cryptocurrency on minergate
+
+Here is the code for Linux Command line
+
+sudo apt-get update
+# first update the kernel version of your distro
+wget https://minergate.com/download/deb-cli
+# download the cli 
+mv deb-cli minergate-cli-release.deb
+# move it out
+sudo apt install gdebi -y
+# install gdebi
+sudo gdebi minergate-cli-release.deb
+# run this as su
+minergate-cli -user topeabdulgafar@gmail.com -xmr
+# start mining replace -user email (in your case) then the coin -xmr(for monero)
+nohup minergate-cli -user topeabdulgafar@gmail.com -xmr
+# to run your miner in backgroud even when you close your vps
